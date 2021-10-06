@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Form, Input, Button, message } from "antd";
-// import { ReactComponent as CheckGroup } from "../../images/GroupCheck.svg";
+import { ReactComponent as CheckGroup } from "../../images/sentMessage.svg";
 import "antd/dist/antd.css";
 import "./ContactUs.css";
 
@@ -25,9 +25,8 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
       .then((values) => {
         showSuccessMessage(true);
         setTimeout(() => {
-          onClose();
-          // showSuccessMessage(false);
           form.resetFields();
+          onClose();
         }, 3000);
       })
       .catch((errorInfo) => {
@@ -37,10 +36,18 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
   };
   return (
     <div className="contact-us">
-      <Drawer placement="right" onClose={onClose} visible={visible} width={540}>
+      <Drawer
+        placement="right"
+        onClose={onClose}
+        closable={false}
+        visible={visible}
+        width={540}
+      >
         {successMessageIsShown ? (
           <div className="successMessage">
-            <div>{/* <CheckGroup /> */}</div>
+            <div>
+              <CheckGroup />
+            </div>
             <div className="successMessage-title">
               <span>Successfully Sent</span>
             </div>

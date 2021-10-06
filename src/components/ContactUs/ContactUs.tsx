@@ -6,7 +6,7 @@ import "./ContactUs.css";
 
 export default function ContactUs({ drawerIsShown, showDrawer }: any) {
   const [visible, setVisible] = useState(false);
-  const [successMessageIsShown, showSuccessMessage] = useState(false);
+  const [successMessageIsShown, showSuccessMessage] = useState(true);
   const [form] = Form.useForm();
 
   useEffect(() => {
@@ -40,9 +40,13 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
             <div>
               <CheckCircleOutlined />
             </div>
+            <div className="successMessage-title">
+              <span>Successfully Sent</span>
+            </div>
             <div className="successMessage-text">
               <span>
-                Your message sent successfully and we will reply you very soon.
+                Your message has been sent successfully and we will reply you
+                very soon, Thanks
               </span>
             </div>
           </div>

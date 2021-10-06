@@ -1,17 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { IntlProvider } from "react-intl";
+import AppRoutes from "./components/AppRoutes/AppRoutes";
+import { flattenMessages } from "./utils/locale";
+import locale from "./locale";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./styles/index.less";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+  return (
+    <IntlProvider locale="en-US" messages={flattenMessages(locale["en-US"])}>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </IntlProvider>
+  );
+}
+
+render(<App />, document.getElementById("root"));

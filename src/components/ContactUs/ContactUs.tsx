@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Form, Input, Button, message } from "antd";
-import { CheckCircleOutlined } from "@ant-design/icons";
+// import { ReactComponent as CheckGroup } from "../../images/GroupCheck.svg";
 import "antd/dist/antd.css";
 import "./ContactUs.css";
 
 export default function ContactUs({ drawerIsShown, showDrawer }: any) {
   const [visible, setVisible] = useState(false);
-  const [successMessageIsShown, showSuccessMessage] = useState(true);
+  const [successMessageIsShown, showSuccessMessage] = useState(false);
   const [form] = Form.useForm();
 
   useEffect(() => {
+    showSuccessMessage(false);
     setVisible(drawerIsShown);
   }, [drawerIsShown]);
 
@@ -24,7 +25,9 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
       .then((values) => {
         showSuccessMessage(true);
         setTimeout(() => {
-          showSuccessMessage(false);
+          onClose();
+          // showSuccessMessage(false);
+          form.resetFields();
         }, 3000);
       })
       .catch((errorInfo) => {
@@ -37,9 +40,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
       <Drawer placement="right" onClose={onClose} visible={visible} width={540}>
         {successMessageIsShown ? (
           <div className="successMessage">
-            <div>
-              <CheckCircleOutlined />
-            </div>
+            <div>{/* <CheckGroup /> */}</div>
             <div className="successMessage-title">
               <span>Successfully Sent</span>
             </div>

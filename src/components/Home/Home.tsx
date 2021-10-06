@@ -16,7 +16,9 @@ export default function Home() {
   return (
     <div className="home-page">
       <div className="home-page-body">
-        <GteraLogo />
+        <div className="gtera-logo">
+          <GteraLogo />
+        </div>
         <div className="gtera-wrapper">
           <div className="waiting">
             <div>

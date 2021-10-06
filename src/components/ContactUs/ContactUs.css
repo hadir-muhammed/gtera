@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../../styles/fonts/Proxima\ Nova\ Font.otf");
+  src: url("../../fonts/Milliard-Book.woff2") format("woff2"),
+    url("../../fonts/Milliard-Book.woff") format("woff");
 }
 
 .ant-drawer-mask {
@@ -48,6 +49,7 @@
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
   border-radius: 8px;
+  padding-left: 16px;
 }
 
 textarea.ant-input {
@@ -56,6 +58,7 @@ textarea.ant-input {
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
   border-radius: 8px;
+  padding-left: 16px;
 }
 
 .send-btn,
@@ -70,6 +73,7 @@ textarea.ant-input {
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
+  border: unset;
 }
 .cancel-btn,
 .cancel-btn:hover,
@@ -80,7 +84,9 @@ textarea.ant-input {
   line-height: 16px;
   text-align: center;
   color: #d95858;
+  border: unset;
   background-color: white;
+  padding-right: 60px;
 }
 .btn-wrapper {
   text-align: right;
@@ -97,12 +103,11 @@ textarea.ant-input {
 
 .successMessage-title {
   font-family: "Sulphur Point";
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 40px;
+  line-height: 40px;
   text-align: center;
-  color: #757575;
-  background-color: white;
-  margin-bottom: 16px;
+  color: #384b5e;
+  margin-bottom: 24px;
 }
 
 .successMessage-text {
@@ -111,10 +116,7 @@ textarea.ant-input {
   line-height: 16px;
   text-align: center;
   color: #757575;
-  background-color: white;
 }
 .successMessage .anticon-check-circle {
-  color: #9ccc65;
-  font-size: 90px;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }

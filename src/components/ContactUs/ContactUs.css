@@ -7,6 +7,9 @@
 .ant-drawer-mask {
   background-color: rgba(255, 255, 255, 0.64);
 }
+.ant-drawer-content-wrapper {
+  width: 540px !important;
+}
 .ant-drawer-wrapper-body {
   padding: 64px;
 }
@@ -120,4 +123,35 @@ textarea.ant-input {
 }
 .successMessage .anticon-check-circle {
   margin-bottom: 48px;
+}
+
+@media (max-width: 1025px) {
+  .ant-drawer-wrapper-body {
+    padding: 16px;
+  }
+  .ant-drawer-content-wrapper {
+    width: calc(100% - 48px) !important;
+    min-height: calc(100% - 48px) !important;
+    background-color: white;
+    height: unset !important;
+    right: unset;
+    margin: 24px;
+  }
+  .cancel-btn {
+    padding-right: 53px;
+  }
+  .contact-us-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .successMessage-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  .cancel-btn {
+    padding-right: 35px !important;
+  }
 }

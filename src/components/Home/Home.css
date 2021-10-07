@@ -140,3 +140,46 @@
   line-height: 18px;
   color: #757575;
 }
+
+@media (max-width: 1025px) {
+  .home-page {
+    padding: 24px 24px 0;
+  }
+  .home-page-body {
+    min-height: calc(100vh - 70px) !important;
+  }
+  .gtera-wrapper {
+    margin-left: 0;
+  }
+  .waiting {
+    background-image: unset;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: unset;
+    background-size: 100%;
+    padding: unset;
+  }
+
+  .paragraph-title {
+    font-size: 48px;
+    line-height: 48px;
+    width: unset;
+    margin-bottom: 26px;
+  }
+  .sandwatch-icon {
+    display: none;
+  }
+  .gtera-logo {
+    margin-bottom: 88px;
+  }
+  .ant-progress-line {
+    width: 100%;
+    position: relative;
+    bottom: unset;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .footer {
+    justify-content: center;
+  }
+}

@@ -30,8 +30,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
         }, 3000);
       })
       .catch((errorInfo) => {
-        console.log(`errorInfo`, errorInfo);
-        message.error("This is an error message");
+        message.error("Some thing went wrong");
       });
   };
   return (
@@ -40,8 +39,8 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
         placement="right"
         onClose={onClose}
         closable={false}
+        destroyOnClose={true}
         visible={visible}
-        width={540}
       >
         {successMessageIsShown ? (
           <div className="successMessage">

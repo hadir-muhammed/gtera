@@ -124,6 +124,9 @@ textarea.ant-input {
 .successMessage .anticon-check-circle {
   margin-bottom: 48px;
 }
+.ant-drawer-right {
+  overflow: auto;
+}
 
 @media (max-width: 1025px) {
   .ant-drawer-wrapper-body {

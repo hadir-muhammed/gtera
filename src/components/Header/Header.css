@@ -1,0 +1,41 @@
+.gtera-header {
+  background-image: url("../../images/intro-bg.png");
+  /* opacity: 0.92; */
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.background-layer {
+  background-color: rgb(56 75 94 / 92%);
+  padding: 0 140px;
+  height: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header .navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 48px;
+}
+
+.header .navbar ul a {
+  font-family: Sulphur Point;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  color: #edf0f4;
+}
+.header .navbar ul button {
+  background: #edf0f4;
+  opacity: 0.88;
+  border-radius: 55px;
+}
+.header .navbar ul button a {
+  color: #384b5e;
+}

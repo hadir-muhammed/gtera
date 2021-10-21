@@ -144,12 +144,16 @@ textarea.ant-input {
     padding-right: 53px;
   }
   .contact-us-title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 24px;
   }
   .successMessage-title {
     font-size: 32px;
     line-height: 32px;
+  }
+  .contact-us-info {
+    display: none;
   }
 }
 

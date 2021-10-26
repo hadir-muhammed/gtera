@@ -19,6 +19,7 @@ export default function Home() {
   const showContactUsDrawer = (value: boolean) => {
     setShowContactUs(value);
   };
+
   return (
     <div className="home-page">
       <div className="home-page-body">
@@ -55,7 +56,7 @@ export default function Home() {
                 "0%": "#384B5E",
                 "100%": "#EC5F60",
               }}
-              percent={20}
+              percent={50}
             />
           </div>
           <div className="sandwatch-icon">
@@ -63,6 +64,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="footer">
         <div>
           <div className="footer-info">
@@ -94,14 +96,11 @@ export default function Home() {
         </div>
         <div>
           <div className="social-media-icons">
-            <a href="ggoge.com" target="_blank">
+            <a href="https://www.linkedin.com/company/gtera" target="_blank">
               <LinkedIn />
             </a>
-            <a href="google" target="_blank">
+            <a href="https://www.facebook.com/gtera.solutions/" target="_blank">
               <Facebook />
-            </a>
-            <a href="google" target="_blank">
-              <Twitter />
             </a>
           </div>
           <div className="footer-rights-container">

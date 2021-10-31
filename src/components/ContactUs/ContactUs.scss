@@ -1,31 +1,29 @@
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("../../fonts/Milliard-Book.woff2") format("woff2"),
-    url("../../fonts/Milliard-Book.woff") format("woff");
-}
-
 .ant-drawer-mask {
   background-color: rgba(255, 255, 255, 0.64);
 }
+
 .ant-drawer-content-wrapper {
   width: 540px !important;
 }
+
 .ant-drawer-wrapper-body {
   padding: 64px;
 }
+
 .ant-drawer-body {
   padding: 0;
 }
 
 .contact-us-info {
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 16px;
   color: #384b5e;
 }
+
 .contact-us-title {
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 64px;
@@ -33,19 +31,22 @@
 }
 
 .ant-form-item-label,
-.ant-form-item-label > label {
+.ant-form-item-label>label {
   font-family: "Proxima Nova";
   font-size: 14px;
   line-height: 19px;
   color: #757575;
   padding-left: 16px;
 }
+
 .ant-form-item-label {
   padding-bottom: 4px !important;
 }
+
 .ant-form-item-required::before {
   display: none !important;
 }
+
 .ant-form-item-control-input-content input {
   height: 48px;
   background: #ffffff;
@@ -71,17 +72,18 @@ textarea.ant-input {
   height: 56px;
   background: #d95858;
   border-radius: 50px;
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
   border: unset;
 }
+
 .cancel-btn,
 .cancel-btn:hover,
 .cancel-btn:focus {
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-weight: bold;
   font-size: 16px;
   line-height: 16px;
@@ -91,6 +93,7 @@ textarea.ant-input {
   background-color: white;
   padding-right: 60px;
 }
+
 .btn-wrapper {
   text-align: right;
   margin-top: 40px;
@@ -105,7 +108,7 @@ textarea.ant-input {
 }
 
 .successMessage-title {
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -115,15 +118,17 @@ textarea.ant-input {
 }
 
 .successMessage-text {
-  font-family: "Sulphur Point";
+  // font-family: "Sulphur Point";
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   color: #757575;
 }
+
 .successMessage .anticon-check-circle {
   margin-bottom: 48px;
 }
+
 .ant-drawer-right {
   overflow: auto;
 }
@@ -132,6 +137,7 @@ textarea.ant-input {
   .ant-drawer-wrapper-body {
     padding: 16px;
   }
+
   .ant-drawer-content-wrapper {
     width: calc(100% - 48px) !important;
     min-height: calc(100% - 48px) !important;
@@ -140,18 +146,22 @@ textarea.ant-input {
     right: unset;
     margin: 24px;
   }
+
   .cancel-btn {
     padding-right: 53px;
   }
+
   .contact-us-title {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 24px;
   }
+
   .successMessage-title {
     font-size: 32px;
     line-height: 32px;
   }
+
   .contact-us-info {
     display: none;
   }

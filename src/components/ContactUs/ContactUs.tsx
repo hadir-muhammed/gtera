@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, Form, Input, Button, message } from "antd";
-import { ReactComponent as CheckGroup } from "../../images/sentMessage.svg";
+import { ReactComponent as CheckGroup } from "../../assets/images/sentMessage.svg";
 import "antd/dist/antd.css";
 import "./ContactUs.scss";
 

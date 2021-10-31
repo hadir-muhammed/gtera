@@ -1,5 +1,5 @@
 footer {
-    padding: 20px 0;
+    padding: 20px 0 50px 0;
 
     ul {
         list-style: none;
@@ -21,6 +21,14 @@ footer {
 
                 span {
                     display: block;
+                    font-family: 'Proxima Nova';
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-bottom: 13px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
             }
 
@@ -30,7 +38,9 @@ footer {
         }
 
         &.social-media {
-            text-align: left;
+            text-align: right;
+            direction: ltr;
+            margin-bottom: 20px;
 
             li {
                 margin-right: 10px;
@@ -47,5 +57,13 @@ footer {
             }
 
         }
+    }
+
+    .footer-rights {
+        text-align: right;
+        font-family: 'Proxima Nova';
+        font-size: 11px;
+        line-height: 18px;
+        color: #757575;
     }
 }

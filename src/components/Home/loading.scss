@@ -3,13 +3,9 @@
         background-image: url("../../assets/images/Union.png");
         background-repeat: no-repeat;
         width: 100%;
-        // height: 584px;
         background-size: 100% 100%;
-        padding: 50px 62px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-between;
-        // box-sizing: border-box;
+        padding: 54px 62px;
+        margin-bottom: 32px;
     }
 
     .sandwatch-icon {
@@ -23,20 +19,19 @@
         right: 45px;
     }
 
-    .h3 {
-        margin-bottom: 16px;
-        font-size: 24px;
+    h3 {
+        margin-bottom: 8px;
         color: #384b5e;
+        font-family: 'Sulphur Point';
+        font-size: 24px;
     }
 
     h1 {
-
+        margin-bottom: 2px;
+        font-family: 'Sulphur Point';
         font-weight: bold;
         font-size: 56px;
-        line-height: 56px;
-        // width: 518px;
-        margin-bottom: 26px;
-        color: #384b5e;
+        max-width: 500px;
     }
 
     h4 {
@@ -54,7 +49,7 @@
         }
 
         button {
-            margin: 20px 0 0;
+            margin: 42px 0 59px 0;
         }
 
         .arrow {
@@ -62,6 +57,11 @@
             font-size: 24px;
             line-height: 29px;
             color: #ec5f60;
+        }
+
+        span,
+        p {
+            vertical-align: middle;
         }
     }
 
@@ -71,14 +71,15 @@
                 width: 100%;
                 position: relative;
                 text-align: center;
-                top: -17px;
-                margin-bottom: 23px;
+                top: -68px;
+                margin-bottom: 0;
             }
 
             &-inner {
                 border-radius: 20px;
                 border: 1px solid #384b5e;
                 height: 12px;
+                overflow: inherit;
             }
 
             &-outer {
@@ -103,7 +104,10 @@
                 text-align: center;
                 color: #384b5e;
                 position: absolute;
-                top: 7px;
+                top: 26px;
+
+                font-family: 'Proxima Nova';
+                color: #384B5E;
             }
         }
     }

@@ -20,8 +20,6 @@ const Footer = () => {
                                 <span>
                                     Egypt: +20 1033 033 411 / Qatar: +974 3000 1629
                                 </span>
-                                <span>Egypt: +20 1033 033 411</span>
-                                <span>Qatar: +974 3000 1629</span>
                             </div>
                         </li >
                         <li>
@@ -38,7 +36,7 @@ const Footer = () => {
                         </li >
                     </ul>
                 </div>
-                <div className="col-4 social">
+                <div className="col-4 social mt-auto">
                     <ul className="social-media">
                         <li>
                             <a href="ggoge.com" target="_blank">

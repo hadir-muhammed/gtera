@@ -13,7 +13,7 @@ type Props = {
 
 const Loading: FC<Props> = (props: Props) => {
     return (
-        <div className="gtera-wrapper col-8 m-auto">
+        <div className="gtera-wrapper col-10 m-auto">
             <div className="waiting">
                 <div>
                     <h3>We are still</h3>
@@ -43,10 +43,11 @@ const Loading: FC<Props> = (props: Props) => {
                         percent={20}
                     />
                 </div>
+
+                <div className="sandwatch-icon">
+                    <img src={Sandwatch} />
+                </div>
             </div>
-            {/* <div className="sandwatch-icon">
-                <img src={Sandwatch} />
-            </div> */}
         </div>
     )
 }

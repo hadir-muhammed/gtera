@@ -3,20 +3,21 @@
         background-image: url("../../assets/images/Union.png");
         background-repeat: no-repeat;
         width: 100%;
+        max-width: 712px;
         background-size: 100% 100%;
         padding: 54px 62px;
-        margin-bottom: 32px;
+        margin-bottom: 62px;
+        position: relative;
     }
 
     .sandwatch-icon {
         background-image: url("../../assets/images/shape.svg");
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 400px;
-        align-self: flex-end;
-        position: relative;
-        top: 52px;
-        right: 45px;
+        width: 380px;
+        position: absolute;
+        bottom: -62px;
+        right: -347px;
     }
 
     h3 {

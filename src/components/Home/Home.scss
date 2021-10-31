@@ -18,52 +18,52 @@
 }
 
 
-@media (max-width: 1025px) {
-  .home-page {
-    padding: 24px 24px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+// @media (max-width: 1025px) {
+//   .home-page {
+//     padding: 24px 24px 0;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 40px;
+//   }
 
-  .home-page-body {
-    min-height: unset !important;
-    height: fit-content !important;
-  }
+//   .home-page-body {
+//     min-height: unset !important;
+//     height: fit-content !important;
+//   }
 
-  .gtera-wrapper {
-    margin-left: 0;
-  }
+//   .gtera-wrapper {
+//     margin-left: 0;
+//   }
 
-  .waiting {
-    background-image: unset;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: unset;
-    background-size: 100%;
-    padding: unset;
-  }
+//   .waiting {
+//     background-image: unset;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: unset;
+//     background-size: 100%;
+//     padding: unset;
+//   }
 
-  .paragraph-title {
-    font-size: 48px;
-    line-height: 48px;
-    width: unset;
-    margin-bottom: 26px;
-  }
+//   .paragraph-title {
+//     font-size: 48px;
+//     line-height: 48px;
+//     width: unset;
+//     margin-bottom: 26px;
+//   }
 
-  .sandwatch-icon {
-    display: none;
-  }
+//   .sandwatch-icon {
+//     display: none;
+//   }
 
-  .gtera-logo {
-    margin-bottom: 88px;
-  }
+//   .gtera-logo {
+//     margin-bottom: 88px;
+//   }
 
-  .ant-progress-line {
-    width: 100%;
-    position: relative;
-    bottom: unset;
-    text-align: center;
-    margin-top: 40px;
-  }
-}
+//   .ant-progress-line {
+//     width: 100%;
+//     position: relative;
+//     bottom: unset;
+//     text-align: center;
+//     margin-top: 40px;
+//   }
+// }

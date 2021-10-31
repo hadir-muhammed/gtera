@@ -11,7 +11,7 @@ import { ReactComponent as Twitter } from "../../images/twitter.svg";
 import { ReactComponent as Facebook } from "../../images/facebook.svg";
 
 import ContactUs from "../ContactUs/ContactUs";
-import "./Home.css";
+import "./Home.scss";
 
 export default function Home() {
   const [showContactUs, setShowContactUs] = useState(false);

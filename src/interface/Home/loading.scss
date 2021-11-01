@@ -135,3 +135,26 @@
         }
     }
 }
+
+html {
+    &[dir=rtl] {
+        .gtera-wrapper {
+            
+            .sandwatch-icon {
+                left: -290px;
+                right: auto;
+                transform: scaleX(-1);
+
+                @media screen and (max-width: 1266px) {
+                    left: 0;
+                }
+            }
+
+            h4 {
+                p {
+                    margin: 0 5px 43px;
+                }
+            }
+        }
+    }
+}

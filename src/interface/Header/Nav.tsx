@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "../../assets/images/Gtera-Logo.svg";
 import './nav.scss';
+import Switcher from '../LanguageSwitcher/Switcher';
 
 const Nav = () => {
     return (
@@ -10,16 +11,16 @@ const Nav = () => {
                     <a className="navbar-brand" href="#">
                         <img src={logo} />
                     </a>
-                    {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Switcher className="nav-link active" />
                             </li>
                         </ul>
-                    </div> */}
+                    </div>
                 </div>
             </nav>
         </>

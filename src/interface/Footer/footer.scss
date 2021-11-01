@@ -82,3 +82,46 @@ footer {
         }
     }
 }
+
+html {
+    &[dir=rtl] {
+        footer {
+            ul {
+                li {
+                    img {
+                        float: right;
+                        margin-left: 20px;
+                        margin-right: 0;
+                    }
+
+                    .details {
+                        text-align: right;
+                    }
+                }
+
+                &.social-media {
+                    text-align: left;
+                    direction: rtl;
+
+                    @media screen and (max-width: 600px) {
+                        text-align: left;
+                    }
+
+                    li {
+                        margin-left: 0;
+                        margin-right: 10px;
+
+                        img {
+                            margin-left: 0;
+                        }
+                    }
+
+                }
+            }
+
+            .footer-rights {
+                text-align: left;
+            }
+        }
+    }
+}

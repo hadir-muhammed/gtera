@@ -1,9 +1,15 @@
 const common = {
     ar: {
-        "common": {},
+        common: {
+            ar: 'العربيه',
+            en: 'English'
+        },
     },
     en: {
-        "common": {}
+        common: {
+            ar: 'العربيه',
+            en: 'English'
+        }
     }
 };
 

@@ -1,5 +1,5 @@
 import { render } from "react-dom";
 import './assets/scss/main.scss';
-import App from './App';
+import AppLangProviderWrapper from './App';
 
-render(<App />, document.getElementById("root"));
+render(<AppLangProviderWrapper />, document.getElementById("root"));

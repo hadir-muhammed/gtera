@@ -1,6 +1,10 @@
 footer {
     padding: 20px 0 50px 0;
 
+    @media screen and (max-width: 600px) {
+        padding-bottom: 10px;
+    }
+
     ul {
         list-style: none;
         padding: 0;
@@ -42,6 +46,13 @@ footer {
             direction: ltr;
             margin-bottom: 20px;
 
+            @media screen and (max-width: 600px) {
+                text-align: left;
+                padding: 20px 0;
+                margin: 0;
+                text-align: center;
+            }
+
             li {
                 margin-right: 10px;
                 margin-bottom: 0;
@@ -65,5 +76,9 @@ footer {
         font-size: 11px;
         line-height: 18px;
         color: #757575;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
     }
 }

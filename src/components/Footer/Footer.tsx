@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer className="container-fluid">
             <div className="row">
-                <div className="col-8">
+                <div className="col-sm-8">
                     <ul>
                         <li>
                             <img src={CallIcon} />
@@ -36,7 +36,7 @@ const Footer = () => {
                         </li >
                     </ul>
                 </div>
-                <div className="col-4 social mt-auto">
+                <div className="col-sm-4 social mt-auto">
                     <ul className="social-media">
                         <li>
                             <a href="ggoge.com" target="_blank">

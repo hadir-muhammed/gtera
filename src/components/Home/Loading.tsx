@@ -13,7 +13,7 @@ type Props = {
 
 const Loading: FC<Props> = (props: Props) => {
     return (
-        <div className="gtera-wrapper col-10 m-auto">
+        <div className="gtera-wrapper col-md-10 m-auto">
             <div className="waiting">
                 <div>
                     <h3>We are still</h3>

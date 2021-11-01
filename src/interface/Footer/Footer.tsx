@@ -7,8 +7,11 @@ import Twitter from "../../assets/images/twitter.svg";
 import Facebook from "../../assets/images/facebook.svg";
 
 import './footer.scss';
+import useTranslations from '../../config/i18n/useTranslations';
 
 const Footer = () => {
+    const msgs = useTranslations();
+
     return (
         <footer className="container-fluid">
             <div className="row">
@@ -56,7 +59,7 @@ const Footer = () => {
                     </ul>
                     <div className="footer-rights">
                         <span>
-                            &copy; All rights reserved to Gtera Solutions Company.2021
+                            &copy; {msgs.footer.cr}
                         </span>
                     </div>
                 </div>

@@ -14,14 +14,15 @@ const Nav = () => {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    {/* Lang Switcher */}
+                    {/* <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Switcher className="nav-link active" />
                             </li>
                         </ul>
-                    </div>
-                </div>
+                    </div> */}
+                </div> 
             </nav>
         </>
     )

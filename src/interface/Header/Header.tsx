@@ -3,7 +3,7 @@ import Intro from "../Intro/Intro";
 import { Button } from "antd";
 import { ReactComponent as GteraLogo } from "../../assets/images/Gtera-Logo.svg";
 import Nav from "./Nav";
-import "./Header.scss";
+import "./header.scss";
 
 export default function Header() {
   return (

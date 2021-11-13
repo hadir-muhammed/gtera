@@ -1,0 +1,18 @@
+.contact-us-btn,
+.contact-us-btn:hover,
+.contact-us-btn:focus {
+  width: 174px;
+  height: 56px !important;
+  background: #ec5f60 !important;
+  border-radius: 50px !important;
+  border: unset !important;
+  color: white !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-text {
+  margin-top: -5px;
+}

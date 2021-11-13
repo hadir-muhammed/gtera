@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
 
-function App() {
+import './App.scss';
+import AppRoutes from './routes';
+import { BrowserRouter } from "react-router-dom";
+import Header from './interface/Header/Header';
+import Footer from './interface/Footer/Footer';
+
+import { flattenMessages, msgs } from "./config/translate";
+import { IntlProvider } from 'react-intl';
+import { LanguageProvider, setLanguage, useLanguageDispatch, useLanguageState } from './config/context/langContext';
+
+const App = () => {
+  let languageState = useLanguageState();
+  const languageDispatch = useLanguageDispatch();
+  const currentMessages = languageState.name == "ar" ? flattenMessages(msgs.ar) : flattenMessages(msgs.en);
+
+  useEffect(() => {
+    let lang: any = "en";
+
+    if (localStorage.getItem('lang')) {
+      lang = localStorage.getItem('lang');
+    }
+
+    languageDispatch(
+      setLanguage({
+        name: lang
+      })
+    );
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IntlProvider locale={languageState.name} messages={currentMessages}>
+      <div className="wrapper">
+        <Header />
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+        <div className="push" />
+      </div>
+
+      <Footer />
+    </IntlProvider>
   );
 }
 
-export default App;
+const AppLangProviderWrapper = () => {
+  return (
+    // <Provider store={store}>
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+    // </Provider>
+  );
+}
+
+export default AppLangProviderWrapper;

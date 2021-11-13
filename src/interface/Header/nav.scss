@@ -1,0 +1,22 @@
+.navbar {
+    &.bg {
+        &-light {
+            background-color: transparent !important;
+        }
+    }
+
+    &-nav {
+        margin-left: auto;
+    }
+}
+
+html {
+    &[dir=rtl] {
+        .navbar {
+            &-nav {
+                margin-right: auto;
+                margin-left: 0;
+            }
+        }
+    }
+}

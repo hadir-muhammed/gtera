@@ -1,0 +1,28 @@
+body {
+    font-family: "Sulphur Point";
+    background: linear-gradient(111.34deg, #FFF9F9 0.56%, #F5FAFF 61.46%);
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -$footer_hight;
+    background-image: url("../../assets/images/bg-pattern.png");
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: animatedBackground 10s linear infinite alternate;
+}
+
+.push {
+    height: $footer_hight;
+}
+
+#root {
+    height: 100%;
+    padding: 0 20px;
+}

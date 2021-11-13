@@ -1,0 +1,127 @@
+footer {
+    padding: 20px 0 50px 0;
+
+    @media screen and (max-width: 600px) {
+        padding-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin-bottom: 20px;
+
+            img {
+                float: left;
+                margin-right: 20px;
+            }
+
+            .details {
+                display: table;
+                text-align: left;
+                margin: 0;
+
+                span {
+                    display: block;
+                    font-family: 'Proxima Nova';
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-bottom: 13px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &.social-media {
+            text-align: right;
+            direction: ltr;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 600px) {
+                text-align: left;
+                padding: 20px 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            li {
+                margin-right: 10px;
+                margin-bottom: 0;
+                display: inline-block;
+
+                img {
+                    margin-right: 0;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+
+    .footer-rights {
+        text-align: right;
+        font-family: 'Proxima Nova';
+        font-size: 11px;
+        line-height: 18px;
+        color: #757575;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+}
+
+html {
+    &[dir=rtl] {
+        footer {
+            ul {
+                li {
+                    img {
+                        float: right;
+                        margin-left: 20px;
+                        margin-right: 0;
+                    }
+
+                    .details {
+                        text-align: right;
+                    }
+                }
+
+                &.social-media {
+                    text-align: left;
+                    direction: rtl;
+
+                    @media screen and (max-width: 600px) {
+                        text-align: left;
+                    }
+
+                    li {
+                        margin-left: 0;
+                        margin-right: 10px;
+
+                        img {
+                            margin-left: 0;
+                        }
+                    }
+
+                }
+            }
+
+            .footer-rights {
+                text-align: left;
+            }
+        }
+    }
+}

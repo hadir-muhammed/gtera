@@ -1,0 +1,160 @@
+.gtera-wrapper {
+    .waiting {
+        background-image: url("../../assets/images/Union.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 712px;
+        background-size: 100% 100%;
+        padding: 54px 62px;
+        margin-bottom: 62px;
+        position: relative;
+
+        @media screen and (max-width: 1266px) {
+            max-width: 100%;
+        }
+    }
+
+    .sandwatch-icon {
+        background-image: url("../../assets/images/shape.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 380px;
+        position: absolute;
+        bottom: -62px;
+        right: -347px;
+
+        @media screen and (max-width: 1266px) {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: auto;
+            margin: 0 auto;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+
+    h3 {
+        margin-bottom: 8px;
+        color: #384b5e;
+        font-family: 'Sulphur Point';
+        font-size: 24px;
+    }
+
+    h1 {
+        margin-bottom: 2px;
+        font-family: 'Sulphur Point';
+        font-weight: bold;
+        font-size: 56px;
+        max-width: 500px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 30px;
+        }
+    }
+
+    h4 {
+        padding-bottom: 66px;
+        font-family: "Proxima Nova";
+        margin: 0;
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            font-family: "Proxima Nova";
+            color: #757575;
+            margin: 0 5px 43px;
+            display: inline;
+        }
+
+        button {
+            margin: 42px 0 59px 0;
+        }
+
+        .arrow {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 29px;
+            color: #ec5f60;
+        }
+
+        span,
+        p {
+            vertical-align: middle;
+        }
+    }
+
+    .ant {
+        &-progress {
+            &-line {
+                width: 100%;
+                position: relative;
+                text-align: center;
+                top: -68px;
+                margin-bottom: 0;
+            }
+
+            &-inner {
+                border-radius: 20px;
+                border: 1px solid #384b5e;
+                height: 12px;
+                overflow: inherit;
+            }
+
+            &-outer {
+                display: block;
+                width: 100%;
+                margin-right: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            &-bg {
+                height: 12px !important;
+                position: relative;
+                background-color: #1890ff;
+                border-radius: 8px;
+                transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
+                top: -1px;
+            }
+
+            &-text {
+                font-size: 11px;
+                line-height: 13px;
+                text-align: center;
+                color: #384b5e;
+                position: absolute;
+                top: 26px;
+                margin: 0;
+                font-family: 'Proxima Nova';
+                color: #384B5E;
+            }
+        }
+    }
+}
+
+html {
+    &[dir=rtl] {
+        .gtera-wrapper {
+            
+            .sandwatch-icon {
+                left: -290px;
+                right: auto;
+                transform: scaleX(-1);
+
+                @media screen and (max-width: 1266px) {
+                    left: 0;
+                }
+            }
+
+            h4 {
+                p {
+                    margin: 0 5px 43px;
+                }
+            }
+        }
+    }
+}

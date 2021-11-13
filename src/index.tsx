@@ -1,9 +1,6 @@
 import { render } from "react-dom";
-import AppRoutes from "./components/AppRoutes/AppRoutes";
-import "./index.css";
 
-function App() {
-  return <AppRoutes />;
-}
+import "./assets/scss/main.scss";
+import AppLangProviderWrapper from "./App";
 
-render(<App />, document.getElementById("root"));
+render(<AppLangProviderWrapper />, document.getElementById("root"));

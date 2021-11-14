@@ -21,7 +21,7 @@ const Footer = () => {
                             <img src={CallIcon} />
                             <div className="details">
                                 <span>
-                                    Egypt: +20 1033 033 411 / Qatar: +974 3000 1629
+                                    {msgs.footer.address}
                                 </span>
                             </div>
                         </li >
@@ -29,11 +29,10 @@ const Footer = () => {
                             <img src={LocationIcon} />
                             <div className="details">
                                 <span>
-                                    Egypt: 20 Greentowers Compound, 20 St., Smouha, Alexandria.
+                                    {msgs.footer.eg}
                                 </span>
                                 <span>
-                                    Qatar: Building 34, 319 St., Zone 69, Marina Twin Towers,
-                                    Lusail.
+                                    {msgs.footer.qa}
                                 </span>
                             </div>
                         </li >

@@ -7,7 +7,7 @@ import "./Home.scss";
 export default function Home() {
   const [showContactUs, setShowContactUs] = useState(false);
 
-  const showContactUsDrawer = (value: boolean) => {
+  const showContactUsDrawer = (value: boolean): void => {
     setShowContactUs(value);
   };
 

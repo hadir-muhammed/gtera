@@ -1,21 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FC } from "react";
 import { Drawer, Form, Input, Button, message } from "antd";
 import { ReactComponent as CheckGroup } from "../../assets/images/sentMessage.svg";
 import "antd/dist/antd.css";
 import "./ContactUs.scss";
+import useTranslations from "../../config/i18n/useTranslations";
 
-export default function ContactUs({ drawerIsShown, showDrawer }: any) {
+type Props = {
+  drawerIsShown: boolean,
+  showDrawer: (val: boolean) => void
+}
+
+const ContactUs: FC<Props> = (props: Props) => {
   const [visible, setVisible] = useState(false);
   const [successMessageIsShown, showSuccessMessage] = useState(false);
   const [form] = Form.useForm();
+  const msgs = useTranslations();
 
   useEffect(() => {
     showSuccessMessage(false);
-    setVisible(drawerIsShown);
-  }, [drawerIsShown]);
+    setVisible(props.drawerIsShown);
+  }, [props.drawerIsShown]);
 
   const onClose = () => {
-    showDrawer(false);
+    props.showDrawer(false);
     setVisible(false);
   };
 
@@ -33,6 +40,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
         message.error("Some thing went wrong");
       });
   };
+
   return (
     <div className="contact-us">
       <Drawer
@@ -48,35 +56,32 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
               <CheckGroup />
             </div>
             <div className="successMessage-title">
-              <span>Successfully Sent</span>
+              <span>{msgs.contactUs.successTitle}</span>
             </div>
             <div className="successMessage-text">
-              <span>
-                Your message has been sent successfully and we will reply you
-                very soon, Thanks
-              </span>
+              <span>{msgs.contactUs.success}</span>
             </div>
           </div>
         ) : (
           <div className="contact-us-wrapper">
             <div className="contact-us-info">
-              <span>We are happy to contact with you.</span>
+              <span>{msgs.contactUs.description}</span>
             </div>
             <div className="contact-us-title">
-              <span>Send A Message</span>
+              <span>{msgs.contactUs.title}</span>
             </div>
             <Form form={form} layout="vertical" onFinish={handleSubmit}>
               <Form.Item
                 label="Full Name"
                 name="fullName"
-                rules={[{ required: true, message: "Full name is required" }]}
+                rules={[{ required: true, message: msgs.common.validations.required }]}
               >
                 <Input placeholder="Type Full Name" />
               </Form.Item>
               <Form.Item
                 name="email"
                 label="Your Email"
-                rules={[{ required: true, message: "Email is required" }]}
+                rules={[{ required: true, message: msgs.common.validations.required }]}
               >
                 <Input placeholder="example@mail.com" />
               </Form.Item>
@@ -87,7 +92,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
                 name="message"
                 label="Message"
                 rules={[
-                  { required: true, message: "Mobile number is required" },
+                  { required: true, message: msgs.common.validations.required },
                 ]}
               >
                 <Input.TextArea placeholder="Type Your Message" />
@@ -98,7 +103,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
                   type="text"
                   onClick={() => onClose()}
                 >
-                  Cancel
+                  {msgs.common.cancel}
                 </Button>
                 <Button
                   className="send-btn"
@@ -106,7 +111,7 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
                   type="primary"
                   htmlType="submit"
                 >
-                  Send
+                  {msgs.common.submit}
                 </Button>
               </Form.Item>
             </Form>
@@ -116,3 +121,6 @@ export default function ContactUs({ drawerIsShown, showDrawer }: any) {
     </div>
   );
 }
+
+
+export default ContactUs;
